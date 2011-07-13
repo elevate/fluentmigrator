@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FluentMigrator.Tests</RootNamespace>
     <AssemblyName>FluentMigrator.Tests</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -103,9 +103,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\Moq.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=1.0.10.1, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\MySql.Data.dll</HintPath>
+    <Reference Include="mysql.data">
+      <HintPath>..\..\packages\MySql.Data.6.4.3\lib\net20\mysql.data.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Npgsql, Version=2.0.11.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -274,6 +274,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="testscript.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
